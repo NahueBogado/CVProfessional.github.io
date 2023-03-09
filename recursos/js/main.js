@@ -43,8 +43,10 @@ fetchPromise
     let infoMail = document.getElementById('infoMail')
     infoMail.innerHTML = `${emailReal(mail)}`; 
     
+    const NPLower = nombre.toLowerCase() + "-" + apellido.toLowerCase() ; //Los Links deben estar en minusculas obligatoriamente
+
     let infoLinckedIn = document.getElementById('infoLinkedIn')
-    infoLinkedIn.innerHTML = `linkedin.com/in/${nombre}-${apellido}/`; 
+    infoLinkedIn.innerHTML = `linkedin.com/in/${NPLower}`; 
     
     let infoUbi = document.getElementById('infoUbi')
     infoUbi.innerHTML = `${ciudad}, ${pais}`;
@@ -54,8 +56,24 @@ fetchPromise
       presentacion.innerHTML = `Soy ${nombre_apellido}, tengo ${edad} años. Soy atento al detalle, responsable, flexible y tengo gran capacidad para aprender nuevas habilidades. Estoy interesado esta oportunidad laboral porque creo que tengo las condiciones necesarias para realizar de manera sencilla las tareas de este trabajo,
       Aportando mí experiencia en el ámbito.`;
 
+      let profesion1 = document.getElementById('profesion1')
+      profesion1.innerHTML = `Fotógrafo Profesional`;
+
+      let experience1 = document.getElementById('experience1')
+      experience1.innerHTML = `Trabaje durante un periodo de 3 meses como fotógrafo independiente, cubriendo eventos deportivos, personales y públicos. Además, también realice fotografías de productos para la venta algunas veces`;
+
     } else {
       
+      let presentacion = document.getElementById('presentacion')
+      presentacion.innerHTML = `Soy ${nombre_apellido}, tengo ${edad} años. Soy atenta al detalle, responsable, flexible y tengo gran capacidad para aprender nuevas habilidades. Estoy interesada esta oportunidad laboral porque creo que tengo las condiciones necesarias para realizar de manera sencilla las tareas de este trabajo,
+      Aportando mí experiencia en el ámbito.`;
+      
+      let profesion1 = document.getElementById('profesion1')
+      profesion1.innerHTML = `Fotógrafa Profesional`;
+
+      let experience1 = document.getElementById('experience1')
+      experience1.innerHTML = `Trabaje durante un periodo de 3 meses como fotógrafa independiente, cubriendo eventos deportivos, personales y públicos. Además, también realice fotografías de productos para la venta algunas veces`;
+
     }
 
   }
@@ -79,5 +97,3 @@ fetchPromise
     }
     return mailR;
   }
-
-  
