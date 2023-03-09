@@ -33,7 +33,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
   }
   
   /* Change the color of links on hover */
@@ -51,7 +51,7 @@ header {
 .container{
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     min-height: 1000px;
     background-color: white;
     margin: 50px auto;
@@ -73,17 +73,17 @@ header {
 }
 
 img {
-    max-width: 250px;
+    min-width: 250px;
     max-height: auto;
     border-radius: 50%;
     margin: 0 auto;
 }
 
-.imgBx {
+#imgBx {
     display: flex;
 }
 
-.name-profession {
+.nameProfession {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ img {
     font-weight: 600;
 }
 
-.name-profession span {
+.nameProfession span {
     font-size: 0.8em;
     font-weight: 300;
 
@@ -219,6 +219,7 @@ img {
 
 p {
     color: #444;
+    font-size: 17px;
 }
 
 .experience .box {
@@ -266,7 +267,7 @@ p {
     background-color: #444;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1110px) {
     .container{
         grid-template-columns: repeat(1,1fr);
     }
