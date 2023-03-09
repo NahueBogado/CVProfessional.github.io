@@ -15,8 +15,8 @@
    <header>
     <nav class="topnav">
         <a class="active" href="#home">CV</a>
-        <a href="#contact">Contacto</a>
         <a href="#about">Sobre Mi</a>
+        <a href="#contact">Contacto</a>
         <a title="Descargar CV como PDF" href="#download"><i class="fa fa-download" aria-hidden="true"></i>
         </a>
     </nav>
@@ -24,15 +24,18 @@
     <main class="container">
         <article class="leftSide">
             <section id="profileText">
-                <div class="imgBx">
-                    <img src="/recursos/img/B612_20210522_200716_900.jpg" alt="Imagen de Perfil">
+                <div id="imgBx">
+                    <!-- INSERTO IMAGEN DESDE JS -->
                 </div>
-                <h2 class="name-profession">Nahuel Bogado<br><span>Web Developer</span></h2>
+
+                <div id="nameProfession">
+                    <!-- INSERTO CONTENIDO DESDE JS -->
+                </div>
             </section>
             <section class="infoContacto">
                 <h3 class="contact">Contacto</h3>
                 <ul>
-                    <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="info" id="infoTel">+54 11 2838-3285</span></li>
+                    <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="info" id="infoTel">+54 11 8283-2385</span></li>
                     <li><span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="info" id="infoMail">nbogado@galileo.edu.ar</span></li>
                     <li><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span><span class="info" id="infoLinkedIn">linkedin.com/in/naweh-1</span></li>
                     <li><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="info" id="infoUbi">Buenos Aires, Argentina</span></li>
@@ -83,8 +86,7 @@
         <article class="rightSide">
             <section class="sobreMi">
                 <h2 class="title">Perfil</h2>
-                <p>Soy Nahuel Bogado, tengo 19 años. Soy atento al detalle, responsable, flexible y tengo gran capacidad para aprender nuevas habilidades. Estoy interesado esta oportunidad laboral porque creo que tengo las condiciones necesarias para realizar de manera sencilla las tareas de este trabajo,
-                Aportando mí experiencia en el ámbito.</p>
+                <p id="presentacion"><!-- INSERTO TEXTO DESDE JS --></p>
             </section>
 
             <section class="experience">
@@ -154,5 +156,6 @@
 
         </article>
     </main>
+    <script src="./recursos/js/main.js"></script>
 </body>
 </html>
